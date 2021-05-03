@@ -1,0 +1,275 @@
+/*=====================================================
+Common Css
+=====================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  height: 5000px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 78px;
+  font-weight: bolder;
+  color: var(--pure-Color);
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: var(--pure-Color);
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--pure-Color);
+  font-family: "Playfair Display", serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--pure-Color);
+  font-family: "roboto", sans-serif;
+}
+
+p {
+  font-family: "roboto", sans-serif;
+  line-height: 25px;
+  color: var(--pure-Color);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+a {
+  font-family: "roboto", sans-serif;
+  text-decoration: none;
+  color: var(--pure-Color);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--pure-Color);
+}
+
+.btn-primary {
+  background-color: var(--secondery-Color);
+  border: var(--secondery-Color);
+  padding: 15px 30px;
+  color: var(--pure-Color);
+  transition: 0.3s ease all;
+}
+
+.btn-primary:hover {
+  background-color: var(--pure-Color);
+  color: var(--secondery-Color);
+  border: var(--pure-Color);
+}
+
+.btn-secondery {
+  background-color: var(--primary-Color);
+  padding: 15px 30px;
+  border: var(--primary-Color);
+  color: var(--pure-Color);
+  transition: 0.3s ease all;
+}
+
+.btn-secondery:hover {
+  background-color: var(--pure-Color);
+  color: var(--primary-Color);
+  border: var(--pure-Color);
+}
+
+:root {
+  --primary-Color: #272626;
+  --secondery-Color: #0a3bd9;
+  --pure-Color: #fff;
+  --dark-Color: rgb(22, 22, 22);
+}
+
+/*=====================================================
+Header And Nav Css
+=====================================================*/
+
+nav {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: url(../img/headerimg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  margin-top: -60px;
+}
+
+.hero {
+  height: 92vh;
+  width: 100%;
+  padding-top: 150px;
+}
+
+/*=====================================================
+About Us Section Css
+=====================================================*/
+
+.about-Us {
+  background-color: var(--primary-Color);
+  height: fit-content;
+  width: 100%;
+  padding: 120px 10px;
+}
+
+/*=====================================================
+Capabilities And Showcase Css
+=====================================================*/
+
+.capabilities {
+  background: var(--primary-Color);
+  height: fit-content;
+  width: 100%;
+  padding: 70px 0 70px 50px;
+}
+
+.showcase {
+  background: url(../img/section2_img.jpg);
+  height: fit-content;
+  width: 100%;
+  padding: 70px 0 70px 50px;
+}
+
+/*=====================================================
+web app design Css
+=====================================================*/
+
+.web-app {
+  padding: 110px 10px;
+}
+
+/*=====================================================
+picture Css
+=====================================================*/
+
+.picture .left-img {
+  background: url(../img/section4_img1.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture .right-img {
+  background: url(../img/section4_img2.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*=====================================================
+Projectsnhrs Css
+=====================================================*/
+
+.projectsnhrs {
+  padding: 80px 0;
+}
+
+/*=====================================================
+Clients Css
+=====================================================*/
+
+.review-slider img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.client {
+  background: rgb(245, 245, 245);
+  padding: 80px 10px;
+}
+
+.client-img img {
+  background: url(../img/section6_img.jpg);
+  width: 100%;
+  height: px;
+}
+
+.img-bg {
+  background: url(../img/section6_img.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+/*=====================================================
+News Start Css
+=====================================================*/
+
+.news-start {
+  padding: 70px 10px;
+}
+
+.news-start .user img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.news-start .card a {
+  border-bottom: 2px solid var(--dark-Color);
+  transition: 0.3s all ease;
+}
+
+.news-start .card {
+  padding: 20px 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease all;
+}
+
+.news-start .card:hover {
+  box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  scale: 1.1;
+}
+
+.news-start .button {
+  height: 20vh;
+  width: 100%;
+}
+
+/*=====================================================
+Join Us Css
+=====================================================*/
+
+.join-us {
+  background: var(--dark-Color);
+  width: 100%;
+  height: fit-content;
+  padding: 70px 10px;
+}
+
+/*=====================================================
+Footer Css
+=====================================================*/
+
+footer {
+  background-color: var(--primary-Color);
+  padding: 70px 10px 50px 10px;
+}
